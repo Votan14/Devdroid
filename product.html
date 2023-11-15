@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231113160329">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231115222524">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,11 +17,12 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__box">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<a href="/" class="header__logo">
-						<img src="img/logo-head.png" alt="">
+						<img src="img/logo-head.png" alt="" class="logo-desktop">
+						<img src="img/logo-mob.png" alt="" class="logo-mob">
 					</a>
 					<div class="header__menu menu">
-						<button type="button" class="menu__icon icon-menu"><span></span></button>
 						<nav class="menu__body">
 							<ul class="menu__list">
 								<li class="menu__item">
@@ -34,14 +35,41 @@
 										Про компанію
 									</a>
 								</li>
-								<li class="menu__item">
-									<a href="" class="menu__link droplist">
+								<li class="menu__item droplist">
+									<a href="" class="menu__link droplist-link">
 										<span>Продукція</span>
 										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<g id="Group">
 												<path id="Vector" d="M11.9997 13.1722L7.04974 8.22217L5.63574 9.63617L11.9997 16.0002L18.3637 9.63617L16.9497 8.22217L11.9997 13.1722Z" />
 											</g>
 										</svg>
+										<ul class="drop-list-down">
+											<li class="drop-list-item">
+												<a href="" class="drop-list-link">
+													Продукт 1
+												</a>
+											</li>
+											<li class="drop-list-item">
+												<a href="" class="drop-list-link">
+													Продукт 1
+												</a>
+											</li>
+											<li class="drop-list-item">
+												<a href="" class="drop-list-link">
+													Продукт 1
+												</a>
+											</li>
+											<li class="drop-list-item">
+												<a href="" class="drop-list-link">
+													Продукт 1
+												</a>
+											</li>
+											<li class="drop-list-item">
+												<a href="" class="drop-list-link">
+													Продукт 1
+												</a>
+											</li>
+										</ul>
 									</a>
 								</li>
 								<li class="menu__item">
@@ -55,6 +83,17 @@
 									</a>
 								</li>
 							</ul>
+							<div class="menu__mob-header">
+								<p class="menu__mob-text">
+									зв’язок:
+								</p>
+								<a href="tel:+380999999999" class="menu__mob-link">
+									+38 099 999 99 99
+								</a>
+								<a href="mailto:info.somemail@gmail.com" class="menu__mob-link">
+									info.somemail@gmail.com
+								</a>
+							</div>
 						</nav>
 					</div>
 					<div class="header__lang">
@@ -75,248 +114,79 @@
 						<img src="img/icons/left.svg" alt="">
 						<span>Назад до каталогу</span>
 					</a>
-					<!-- Оболонка слайдера -->
-					<div class="productpage__slider swiper">
-						<!-- Частина слайдера, що рухається -->
-						<div class="productpage__wrapper swiper-wrapper">
-							<!-- Слайд -->
-							<div class="productpage__slide swiper-slide">
-								<p class="productpage__slide-item">
+					<div class="productpage__box">
+						<!-- Оболонка слайдера -->
+						<div class="productpage__slider swiper">
+							<!-- Частина слайдера, що рухається -->
+							<div class="productpage__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="productpage__slide swiper-slide">
 									<img src="img/projects/01.jpg" alt="">
-								</p>
-								<div class="productpage__slide-item">
-									<div class="productpage__slide-top">
-										<p class="productpage__slide-load">
-											Завантажити PDF / Роздрукувати
-										</p>
-										<a href="" class="productpage__slide-pdf">
-											<img src="img/icons/pdf.svg" alt="">
-										</a>
-									</div>
-									<p class="productpage__slide-title title">
-										Бойовий модуль ТГП
-									</p>
-									<p class="productpage__slide-text">
-										Захищає екіпаж броньованої машини.
-										Не потребує суттєвих модифікацій для використання. <br><br>
-										Система автоматичного ведення вогню по протитанкових керованих ракет або
-										зенітних ракет. <br><br>
-										Він легко інтегрується використовуючи загальний інтерфейс на будь-якому пристрої
-										Телефон/Ноутбук/Планшет
-									</p>
-									<div class="productpage__slide-read">
-										<a href="" class="productpage__slide-link">
-											<span>
-												Читати повністю
-											</span>
-											<img src="img/icons/read-down.svg" alt="">
-										</a>
-									</div>
-									<a href="#" data-popup="#popup" class="productpage__slide-red">
-										<span>Замовити у роту</span>
-										<img src="img/icons/right.svg" alt="">
-									</a>
 								</div>
-							</div>
-							<div class="productpage__slide swiper-slide">
-								<p class="productpage__slide-item">
+								<div class="productpage__slide swiper-slide">
 									<img src="img/projects/01.jpg" alt="">
-								</p>
-								<div class="productpage__slide-item">
-									<div class="productpage__slide-top">
-										<p class="productpage__slide-load">
-											Завантажити PDF / Роздрукувати
-										</p>
-										<a href="" class="productpage__slide-pdf">
-											<img src="img/icons/pdf.svg" alt="">
-										</a>
-									</div>
-									<p class="productpage__slide-title title">
-										Бойовий модуль ТГП
-									</p>
-									<p class="productpage__slide-text">
-										Захищає екіпаж броньованої машини.
-										Не потребує суттєвих модифікацій для використання. <br><br>
-										Система автоматичного ведення вогню по протитанкових керованих ракет або
-										зенітних ракет. <br><br>
-										Він легко інтегрується використовуючи загальний інтерфейс на будь-якому пристрої
-										Телефон/Ноутбук/Планшет
-									</p>
-									<div class="productpage__slide-read">
-										<a href="" class="productpage__slide-link">
-											<span>
-												Читати повністю
-											</span>
-											<img src="img/icons/read-down.svg" alt="">
-										</a>
-									</div>
-									<a href="#" data-popup="#popup" class="productpage__slide-red">
-										<span>Замовити у роту</span>
-										<img src="img/icons/right.svg" alt="">
-									</a>
 								</div>
-							</div>
-							<div class="productpage__slide swiper-slide">
-								<p class="productpage__slide-item">
+								<div class="productpage__slide swiper-slide">
 									<img src="img/projects/01.jpg" alt="">
-								</p>
-								<div class="productpage__slide-item">
-									<div class="productpage__slide-top">
-										<p class="productpage__slide-load">
-											Завантажити PDF / Роздрукувати
-										</p>
-										<a href="" class="productpage__slide-pdf">
-											<img src="img/icons/pdf.svg" alt="">
-										</a>
-									</div>
-									<p class="productpage__slide-title title">
-										Бойовий модуль ТГП
-									</p>
-									<p class="productpage__slide-text">
-										Захищає екіпаж броньованої машини.
-										Не потребує суттєвих модифікацій для використання. <br><br>
-										Система автоматичного ведення вогню по протитанкових керованих ракет або
-										зенітних ракет. <br><br>
-										Він легко інтегрується використовуючи загальний інтерфейс на будь-якому пристрої
-										Телефон/Ноутбук/Планшет
-									</p>
-									<div class="productpage__slide-read">
-										<a href="" class="productpage__slide-link">
-											<span>
-												Читати повністю
-											</span>
-											<img src="img/icons/read-down.svg" alt="">
-										</a>
-									</div>
-									<a href="#" data-popup="#popup" class="productpage__slide-red">
-										<span>Замовити у роту</span>
-										<img src="img/icons/right.svg" alt="">
-									</a>
 								</div>
-							</div>
-							<div class="productpage__slide swiper-slide">
-								<p class="productpage__slide-item">
+								<div class="productpage__slide swiper-slide">
 									<img src="img/projects/01.jpg" alt="">
-								</p>
-								<div class="productpage__slide-item">
-									<div class="productpage__slide-top">
-										<p class="productpage__slide-load">
-											Завантажити PDF / Роздрукувати
-										</p>
-										<a href="" class="productpage__slide-pdf">
-											<img src="img/icons/pdf.svg" alt="">
-										</a>
-									</div>
-									<p class="productpage__slide-title title">
-										Бойовий модуль ТГП
-									</p>
-									<p class="productpage__slide-text">
-										Захищає екіпаж броньованої машини.
-										Не потребує суттєвих модифікацій для використання. <br><br>
-										Система автоматичного ведення вогню по протитанкових керованих ракет або
-										зенітних ракет. <br><br>
-										Він легко інтегрується використовуючи загальний інтерфейс на будь-якому пристрої
-										Телефон/Ноутбук/Планшет
-									</p>
-									<div class="productpage__slide-read">
-										<a href="" class="productpage__slide-link">
-											<span>
-												Читати повністю
-											</span>
-											<img src="img/icons/read-down.svg" alt="">
-										</a>
-									</div>
-									<a href="#" data-popup="#popup" class="productpage__slide-red">
-										<span>Замовити у роту</span>
-										<img src="img/icons/right.svg" alt="">
-									</a>
 								</div>
-							</div>
-							<div class="productpage__slide swiper-slide">
-								<p class="productpage__slide-item">
+								<div class="productpage__slide swiper-slide">
 									<img src="img/projects/01.jpg" alt="">
-								</p>
-								<div class="productpage__slide-item">
-									<div class="productpage__slide-top">
-										<p class="productpage__slide-load">
-											Завантажити PDF / Роздрукувати
-										</p>
-										<a href="" class="productpage__slide-pdf">
-											<img src="img/icons/pdf.svg" alt="">
-										</a>
-									</div>
-									<p class="productpage__slide-title title">
-										Бойовий модуль ТГП
-									</p>
-									<p class="productpage__slide-text">
-										Захищає екіпаж броньованої машини.
-										Не потребує суттєвих модифікацій для використання. <br><br>
-										Система автоматичного ведення вогню по протитанкових керованих ракет або
-										зенітних ракет. <br><br>
-										Він легко інтегрується використовуючи загальний інтерфейс на будь-якому пристрої
-										Телефон/Ноутбук/Планшет
-									</p>
-									<div class="productpage__slide-read">
-										<a href="" class="productpage__slide-link">
-											<span>
-												Читати повністю
-											</span>
-											<img src="img/icons/read-down.svg" alt="">
-										</a>
-									</div>
-									<a href="#" data-popup="#popup" class="productpage__slide-red">
-										<span>Замовити у роту</span>
-										<img src="img/icons/right.svg" alt="">
-									</a>
 								</div>
-							</div>
-							<div class="productpage__slide swiper-slide">
-								<p class="productpage__slide-item">
+								<div class="productpage__slide swiper-slide">
 									<img src="img/projects/01.jpg" alt="">
-								</p>
-								<div class="productpage__slide-item">
-									<div class="productpage__slide-top">
-										<p class="productpage__slide-load">
-											Завантажити PDF / Роздрукувати
-										</p>
-										<a href="" class="productpage__slide-pdf">
-											<img src="img/icons/pdf.svg" alt="">
-										</a>
-									</div>
-									<p class="productpage__slide-title title">
-										Бойовий модуль ТГП
-									</p>
-									<p class="productpage__slide-text">
-										Захищає екіпаж броньованої машини.
-										Не потребує суттєвих модифікацій для використання. <br><br>
-										Система автоматичного ведення вогню по протитанкових керованих ракет або
-										зенітних ракет. <br><br>
-										Він легко інтегрується використовуючи загальний інтерфейс на будь-якому пристрої
-										Телефон/Ноутбук/Планшет
-									</p>
-									<div class="productpage__slide-read">
-										<a href="" class="productpage__slide-link">
-											<span>
-												Читати повністю
-											</span>
-											<img src="img/icons/read-down.svg" alt="">
-										</a>
-									</div>
-									<a href="#" data-popup="#popup" class="productpage__slide-red">
-										<span>Замовити у роту</span>
-										<img src="img/icons/right.svg" alt="">
-									</a>
 								</div>
 							</div>
 						</div>
-						<div class="productpage__slider-block">
-							<!-- Якщо потрібна пагінація -->
-							<div class="swiper-pagination"></div>
-							<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
-							<div class="productpage__slide-nav">
-								<button type="button" class="swiper-button-prev">→</button>
-								<button type="button" class="swiper-button-next">→</button>
+						<div class="productpage__slide-item">
+							<div class="productpage__slide-top">
+								<p class="productpage__slide-load">
+									Завантажити PDF / Роздрукувати
+								</p>
+								<a href="" class="productpage__slide-pdf">
+									<img src="img/icons/pdf.svg" alt="">
+								</a>
 							</div>
+							<p class="productpage__slide-title title">
+								Бойовий модуль ТГП
+							</p>
+							<div class="productpage__slide-more" data-showmore>
+								<p class="productpage__slide-text" data-showmore-content="275">
+									Захищає екіпаж броньованої машини.
+									Не потребує суттєвих модифікацій для використання. <br><br>
+									Система автоматичного ведення вогню по протитанкових керованих ракет або
+									зенітних ракет. <br><br>
+									Він легко інтегрується використовуючи загальний інтерфейс на будь-якому пристрої
+									Телефон/Ноутбук/Планшет
+									Захищає екіпаж броньованої машини.
+									Не потребує суттєвих модифікацій для використання. <br><br>
+									Система автоматичного ведення вогню по протитанкових керованих ракет або
+									зенітних ракет. <br><br>
+									Він легко інтегрується використовуючи загальний інтерфейс на будь-якому пристрої
+									Телефон/Ноутбук/Планшет
+								</p>
+								<div class="productpage__slide-read">
+									<button hidden data-showmore-button type="button" class="productpage__slide-link">
+										<span>Читати повністю <img src="img/icons/read-down.svg" alt=""></span>
+										<span>Приховати <img src="img/icons/read-down.svg" alt=""></span>
+									</button>
+								</div>
+							</div>
+							<a href="#" data-popup="#popup" class="productpage__slide-red">
+								<span>Замовити у роту</span>
+								<img src="img/icons/right.svg" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="productpage__slider-block">
+						<!-- Якщо потрібна пагінація -->
+						<div class="swiper-pagination"></div>
+						<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+						<div class="productpage__slide-nav">
+							<button type="button" class="swiper-button-prev">→</button>
+							<button type="button" class="swiper-button-next">→</button>
 						</div>
 					</div>
 				</div>
@@ -496,7 +366,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20231113160329"></script>
+	<script src="js/app.min.js?_v=20231115222524"></script>
 </body>
 
 </html>
